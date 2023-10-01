@@ -1,8 +1,8 @@
 # stateless-distributed-counter
 
-Implement stateless, global, and distributed safe counter that runs against maelstrom. writes into `Stdout` and reads from `Stdin`. any errors are written directly into `Stderr`. 
+Implement stateless, global, and distributed safe counter that runs against maelstrom. writes into `Stdout` and reads from `Stdin`. any errors are written directly into `Stderr`.
 
-`read` RPC is always consistant. the design of this counter allow CP (consistency and partioining). it's designed to be highly available but reads are always correct applying Sequential consistency.
+`read` RPC is always consistant. the design of this counter allow CP (consistency and partioining). it's not designed to be highly available. But reads are always correct; applying Sequential consistency.
 
 ##### How to run?
 
